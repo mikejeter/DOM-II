@@ -34,10 +34,14 @@ busImg.addEventListener('mouseenter', (event) => {
     });
 });
 
-window.ononline = (event) => {
-    console.log("You are now connected to the network.");
 
-    window.onoffline = (event) => {
-        console.log("The network connection has been lost.");
-    };
-};
+const h2 = document.querySelector('h2');
+document.addEventListener('keydown', logKey);
+
+function logKey(e) {
+    h2.textContent += ` ${e.code}`;
+}
+
+window.addEventListener('load', (event) => {
+    console.log('page is fully loaded');
+});
