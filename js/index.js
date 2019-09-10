@@ -8,12 +8,6 @@ allNavItems.forEach((item) => {
     });
 });
 
-document.addEventListener('keydown', logKey);
-
-function logKey(e) {
-    log.textContent += ` ${e.code}`;
-}
-
 const button = document.querySelectorAll('.btn');
 
 button.forEach((button) => {
